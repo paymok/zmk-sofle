@@ -62,7 +62,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:keyboard-space$$
   - $$mdi:backspace-reverse-outline$$
   - '2'
   layer1:
@@ -77,8 +77,8 @@ layers:
   - F7
   - F8
   - F9
-  - {t: '-', s: _}
-  - {t: '=', s: +}
+  - F10
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-caps$$
   - {t: '`', s: '~'}
   - $$mdi:mouse-left-click-outline$$
@@ -90,8 +90,8 @@ layers:
   - END
   - $$mdi:arrow-up-bold$$
   - HOME
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
+  - {t: '-', s: _}
+  - {t: '=', s: +}
   - {t: '$$mdi:transfer$$', type: trans}
   - '~'
   - {t: '$$mdi:transfer$$', type: trans}
@@ -103,8 +103,8 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
   - {t: '$$mdi:transfer$$', type: trans}
   - RGB OFF
   - RGB ON

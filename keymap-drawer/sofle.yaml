@@ -145,10 +145,10 @@ layers:
   - F10
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - PG UP
   - HOME
   - $$mdi:arrow-up-bold$$
   - END
-  - PG UP
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - $$mdi:bluetooth-off$$
@@ -158,10 +158,10 @@ layers:
   - _
   - +
   - {t: '$$mdi:transfer$$', type: trans}
+  - PG DN
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - PG DN
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - OUT USB

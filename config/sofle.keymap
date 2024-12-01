@@ -69,10 +69,10 @@
 
         layer_2 {
             bindings = <
-&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6        &kp F7          &kp F8      &kp F9     &kp F10      &trans
-&trans     &kp HOME      &kp UP          &kp END       &kp PG_UP     &trans          &mmv MOVE_DOWN   &bt BT_CLR    &bt BT_CLR_ALL  &kp F11     &kp F12    &kp UNDER    &kp PLUS
-&trans     &kp LEFT      &kp DOWN        &kp RIGHT     &kp PG_DN     &trans          &mmv MOVE_LEFT   &out OUT_USB  &out OUT_BLE    &trans      &trans     &kp LBRC     &kp RBRC
-&trans     &kp LC(Z)     &kp LC(X)       &kp LC(C)     &kp LC(V)     &trans          &mmv MOVE_RIGHT  &sys_reset    &trans          &sys_reset  &soft_off  &bootloader  &trans
+&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &soft_off     &bootloader          &kp F8      &kp F9     &kp F10      &sys_reset
+&trans     &kp HOME      &kp UP          &kp END       &kp PG_UP     &trans          &mmv MOVE_DOWN   &bt BT_CLR    &bt BT_CLR_ALL  &kp F11     &kp F12    &trans       &trans
+&trans     &kp LEFT      &kp DOWN        &kp RIGHT     &kp PG_DN     &trans          &mmv MOVE_LEFT   &out OUT_USB  &out OUT_BLE    &trans      &trans     &trans       &trans
+&trans     &kp LC(Z)     &kp LC(X)       &kp LC(C)     &kp LC(V)     &trans          &mmv MOVE_RIGHT  &trans        &trans          &trans      &trans     &trans       &kp RSHFT
 &trans     &trans        &trans          &trans        &kp ENTER     &trans          &mkp LCLK        &trans        &trans          &trans      &trans     &trans
             >;
 

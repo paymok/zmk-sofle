@@ -92,7 +92,7 @@
 &trans     &kp HOME      &kp UP          &kp END       &kp PG_UP     &trans          &mmv MOVE_DOWN   &bt BT_CLR    &bt BT_CLR_ALL  &kp F11     &kp F12    &trans       &trans
 &trans     &kp LEFT      &kp DOWN        &kp RIGHT     &kp PG_DN     &trans          &mmv MOVE_LEFT   &out OUT_USB  &out OUT_BLE    &trans      &trans     &trans       &trans
 &trans     &kp LC(Z)     &kp LC(X)       &kp LC(C)     &kp LC(V)     &trans          &mmv MOVE_RIGHT  &trans        &trans          &trans      &trans     &trans       &kp RSHFT
-&trans     &trans        &trans          &tog 2        &kp ENTER     &trans          &mkp LCLK        &trans        &trans          &trans      &trans     &trans
+&trans     &trans        &trans          &trans        &kp ENTER     &trans          &mkp LCLK        &trans        &trans          &trans      &trans     &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;

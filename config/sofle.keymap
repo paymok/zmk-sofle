@@ -25,14 +25,14 @@
             bindings = <&kp TAB>, <&kp CLCK>;
         };
 
-        layy1: tap_dance_0 {
+        layy1: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&mo 1>, <&tog 1>;
         };
 
-        layy2: tap_dance_0 {
+        layy2: tap_dance_2 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;

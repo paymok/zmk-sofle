@@ -69,7 +69,7 @@
 
         layer_2 {
             bindings = <
-&trans        &trans          &trans          &trans        &trans         &trans          &mmv MOVE_UP     &trans        &trans          &trans      &trans     &trans      &trans
+&tog 2        &trans          &trans          &trans        &trans         &trans          &mmv MOVE_UP     &trans        &trans          &trans      &trans     &trans      &trans
 &trans        &kp HOME        &kp UP          &kp END       &kp PG_UP      &trans          &mmv MOVE_DOWN   &trans        &trans          &trans      &trans     &trans      &trans
 &trans        &kp LEFT        &kp DOWN        &kp RIGHT     &kp PG_DN      &trans          &mmv MOVE_LEFT   &trans        &trans          &trans      &trans     &trans      &trans
 &trans        &kp LC(Z)       &kp LC(X)       &kp LC(C)     &kp LC(V)      &trans          &mmv MOVE_RIGHT  &trans        &trans          &trans      &trans     &trans      &kp RSHFT
@@ -83,11 +83,11 @@
         
        layer_3 {
             bindings = <
-&trans        &trans          &trans          &trans            &trans            &trans          &mmv MOVE_UP     &trans            &trans           &trans               &trans             &trans                &soft_off
+&tog 3        &trans          &trans          &trans            &trans            &trans          &mmv MOVE_UP     &trans            &trans           &trans               &trans             &trans                &soft_off
 &trans        &trans          &trans          &trans            &trans            &trans          &mmv MOVE_DOWN   &rgb_ug RGB_EFF   &rgb_ug RGB_HUI  &rgb_ug RGB_SAI      &rgb_ug RGB_BRI    &rgb_ug RGB_SPI       &trans
 &trans        &trans          &trans          &trans            &trans            &trans          &mmv MOVE_LEFT   &rgb_ug RGB_EFR   &rgb_ug RGB_HUD  &rgb_ug RGB_SAD      &rgb_ug RGB_BRD    &rgb_ug RGB_SPD       &trans
 &trans        &trans          &trans          &trans            &trans            &trans          &mmv MOVE_RIGHT  &rgb_ug RGB_TOG   &trans           &trans               &trans             &trans                &trans
-&kp C_MUTE    &trans          &trans          &tog 3            &trans            &trans          &mkp LCLK        &trans            &trans           &trans               &bootloader        &sys_reset 
+&kp C_MUTE    &trans          &trans          &trans            &trans            &trans          &mkp LCLK        &trans            &trans           &trans               &bootloader        &sys_reset 
             >;
 
             sensor-bindings = <&scroll_encoder>;

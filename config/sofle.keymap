@@ -60,7 +60,7 @@
 &kp CAPS    &trans           &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &trans           &kp LEFT_BRACKET  &kp SINGLE_QUOTE   &kp RIGHT_BRACKET    &trans            &kp F12
 &trans      &trans           &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &trans           &kp LEFT_BRACE    &kp DOUBLE_QUOTES  &kp RIGHT_BRACE      &trans            &trans
 &trans      &trans           &trans          &trans           &trans           &trans             &mmv MOVE_RIGHT  &trans           &trans            &trans             &trans               &trans            &trans
-&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans            &trans             &trans               &trans
+&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &to 2            &trans            &trans             &trans               &to 3
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -73,7 +73,7 @@
 &trans        &kp HOME        &kp UP          &kp END       &kp PG_UP      &trans          &mmv MOVE_DOWN   &trans        &trans          &trans      &trans     &trans      &trans
 &trans        &kp LEFT        &kp DOWN        &kp RIGHT     &kp PG_DN      &trans          &mmv MOVE_LEFT   &trans        &trans          &trans      &trans     &trans      &trans
 &trans        &kp LC(Z)       &kp LC(X)       &kp LC(C)     &kp LC(V)      &trans          &mmv MOVE_RIGHT  &trans        &trans          &trans      &trans     &trans      &kp RSHFT
-&kp C_MUTE    &trans          &trans          &tog 3        &kp ENTER      &trans          &mkp LCLK        &trans        &kp INS         &trans      &trans     &trans
+&kp C_MUTE    &trans          &trans          &to 2         &kp ENTER      &trans          &mkp LCLK        &trans        &kp INS         &trans      &trans     &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;

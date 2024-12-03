@@ -85,24 +85,24 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE   &trans           &trans          &trans           &trans           &trans             &mmv MOVE_UP     &trans           &trans            &trans            &trans                &trans            &trans
-&kp CAPS    &trans           &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &trans           &kp LEFT_BRACKET  &kp SINGLE_QUOTE   &kp RIGHT_BRACKET    &trans            &trans
-&trans      &trans           &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &trans           &kp LEFT_BRACE    &kp DOUBLE_QUOTES  &kp RIGHT_BRACE      &trans            &trans
-&trans      &trans           &trans          &trans           &trans           &trans             &mmv MOVE_RIGHT  &trans           &kp COLON         &trans             &trans               &trans            &trans
-&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans            &trans             &trans               &to 3
+&tog 1      &trans           &trans          &trans           &trans           &trans               &kp UP_ARROW     &trans           &trans            &trans            &trans                &trans            &trans
+&trans      &kp HOME         &kp UP          &kp END          &trans           &trans               &kp DOWN_ARROW   &trans           &kp LEFT_BRACKET  &kp SINGLE_QUOTE   &kp RIGHT_BRACKET    &trans            &trans
+&trans      &kp LEFT         &kp DOWN        &kp RIGHT        &trans           &trans               &kp LEFT_ARROW   &trans           &kp LEFT_BRACE    &kp DOUBLE_QUOTES  &kp RIGHT_BRACE      &trans            &trans
+&trans      &trans           &trans          &trans           &trans           &trans               &kp RIGHT_ARROW  &trans           &kp COLON         &trans             &trans               &trans            &trans
+&kp C_MUTE  &trans           &trans          &trans           &trans           &trans               &kp ENTER        &trans           &trans            &trans             &trans               &to 3
             >;
 
             sensor-bindings = <&scroll_encoder>;
-            display-name = "MOUSE";
+            display-name = "SYMBOLS";
         };
 
         layer_2 {
             bindings = <
-&tog 2        &trans          &trans          &trans        &trans         &trans          &mmv MOVE_UP     &trans        &trans          &trans          &trans             &trans      &trans
-&trans        &kp HOME        &kp UP          &kp END       &kp PG_UP      &trans          &mmv MOVE_DOWN   &trans        &trans          &mmv MOVE_UP    &trans             &trans      &trans
-&trans        &kp LEFT        &kp DOWN        &kp RIGHT     &kp PG_DN      &trans          &mmv MOVE_LEFT   &trans        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &mkp LCLK   &mkp RCLK
+&tog 2        &trans          &trans          &trans        &trans         &trans          &mmv MOVE_UP     &trans        &trans          &mkp MCLK       &trans             &trans      &trans
+&trans        &kp HOME        &kp UP          &kp END       &kp PG_UP      &kp INS         &mmv MOVE_DOWN  &trans         &mkp LCLK       &mmv MOVE_UP   &mkp RCLK         &trans        &trans
+&trans        &kp LEFT        &kp DOWN        &kp RIGHT     &kp PG_DN      &trans          &mmv MOVE_LEFT   &trans        &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &trans      &trans
 &trans        &kp LC(Z)       &kp LC(X)       &kp LC(C)     &kp LC(V)      &trans          &mmv MOVE_RIGHT  &trans        &trans          &trans          &trans             &trans      &kp RSHFT
-&kp C_MUTE    &trans          &trans          &to 2         &kp ENTER      &trans          &mkp LCLK        &trans        &kp INS         &trans          &trans             &trans
+&kp C_MUTE    &trans          &trans          &to 2         &kp ENTER      &trans          &mkp LCLK        &mkp MB4      &mkp MB5        &trans          &trans             &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;

@@ -17,6 +17,13 @@
 
 / {
     behaviors {
+        
+        shiftCap: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LSHFT>, <&kp CLCK>;
+        };
 
         layy14: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
@@ -67,9 +74,9 @@
             bindings = <
 &graveEsc   &kp N1         &kp N2        &kp N3   &kp N4      &kp N5       &kp UP_ARROW     &kp N6          &kp N7         &kp N8     &kp N9        &kp N0      &kp BACKSPACE
 &kp TAB     &kp Q          &kp W         &kp E    &kp R       &kp T        &kp DOWN_ARROW   &kp Y           &kp U          &kp I      &kp O         &kp P       &kp BSLH
-&kp LSHFT   &kp A          &kp S         &kp D    &kp F       &kp G        &kp LEFT_ARROW   &kp H           &kp J          &kp K      &kp L         &kp SEMI    &kp APOS
+&shiftCap   &kp A          &kp S         &kp D    &kp F       &kp G        &kp LEFT_ARROW   &kp H           &kp J          &kp K      &kp L         &kp SEMI    &kp APOS
 &kp LCTRL   &kp Z          &kp X         &kp C    &kp V       &kp B        &kp RIGHT_ARROW  &kp N           &kp M          &kp COMMA  &kp DOT       &kp FSLH    &kp ENTER
-&kp CLCK  &kp LEFT_GUI   &kp LEFT_ALT  &layy14  &kp SPACE     &kp SPACE    &kp ENTER        &layy2          &kp MINUS      &kp EQUAL  &kp DELETE    &kp RIGHT_SHIFT
+&kp C_MUTE  &kp LEFT_GUI   &kp LEFT_ALT  &layy14  &kp SPACE     &kp SPACE    &kp ENTER        &layy2          &kp MINUS      &kp EQUAL  &kp DELETE    &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;

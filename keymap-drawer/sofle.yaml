@@ -63,8 +63,8 @@ layers:
   - '&layy2'
   - {t: '-', s: _}
   - {t: '=', s: +}
-  - $$mdi:backspace-reverse-outline$$
-  - $$mdi:apple-keyboard-control$$
+  - CONTEXT MENU
+  - $$mdi:apple-keyboard-option$$
   SYMBOLS:
   - {t: SYMBOLS, h: toggle}
   - '!'

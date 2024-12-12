@@ -101,7 +101,7 @@ layers:
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - '{'
-  - .
+  - '"'
   - '}'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}

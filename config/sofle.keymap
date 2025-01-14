@@ -35,14 +35,14 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <150>;
-        bindings = <&kp TILDE>, <&kp NON_US_BACKSLASH>;
+        bindings = <&kp BACKSLASH>, <&kp NON_US_BACKSLASH>;
         };
 
         tilde: tap_dance_7 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <150>;
-            bindings = <&kp HASH>, <&kp LS(NON_US_HASH)>;
+            bindings = <&kp TILDE>, <&kp LS(NON_US_HASH)>;
         };
 
 

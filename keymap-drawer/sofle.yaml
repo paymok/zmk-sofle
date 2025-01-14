@@ -69,7 +69,7 @@ layers:
   - {t: SYMBOLS, h: toggle}
   - '!'
   - '&atsign'
-  - '&sharpsign'
+  - '&hashsign'
   - $
   - '%'
   - $$mdi:arrow-up-bold$$

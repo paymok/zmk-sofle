@@ -17,7 +17,27 @@
 
 / {
     behaviors {
-    
+        atsign: tap_dance_1 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp AT>, <&kp DOUBLE_QUOTES>;
+        };
+
+        sharpsign: tap_dance_1 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp HASH>, <&kp NON_US_HASH>;
+        };
+
+        backslash: tap_dance_1 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp BSLH>, <&kp NON_US_BACKSLASH>;
+        };
+
         layy14: tap_dance_1 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
@@ -78,11 +98,11 @@
 
         layer_1 {
             bindings = <
-&tog 1      &kp EXCL         &kp AT          &kp HASH         &kp DLLR         &kp PRCNT            &kp UP_ARROW     &kp CARET        &kp AMPS          &kp ASTRK          &kp LPAR             &kp RPAR          &trans
-&trans      &kp HOME         &kp UP          &kp END          &trans           &trans               &kp DOWN_ARROW   &kp TILDE        &kp LEFT_BRACKET  &kp SINGLE_QUOTE   &kp RIGHT_BRACKET    &kp BSLH          &trans
-&trans      &kp LEFT         &kp DOWN        &kp RIGHT        &trans           &trans               &kp LEFT_ARROW   &kp GRAVE        &kp LEFT_BRACE    &kp DOUBLE_QUOTES  &kp RIGHT_BRACE      &trans            &trans
-&trans      &kp NON_US_HASH  &trans          &trans           &trans           &trans               &kp RIGHT_ARROW  &kp NON_US_HASH  &kp GRAVE         &trans             &trans               &trans            &trans
-&kp C_MUTE  &trans           &trans          &trans           &trans           &trans               &kp ENTER        &trans           &trans            &trans             &trans               &to 3
+&tog 1      &kp EXCL              &atsign         &sharpsign       &kp DLLR         &kp PRCNT            &kp UP_ARROW     &kp CARET        &kp AMPS          &kp ASTRK          &kp LPAR             &kp RPAR          &trans
+&trans      &kp HOME              &kp UP          &kp END          &trans           &trans               &kp DOWN_ARROW   &trans           &kp LEFT_BRACKET  &kp SINGLE_QUOTE   &kp RIGHT_BRACKET    &backslash        &trans
+&trans      &kp LEFT              &kp DOWN        &kp RIGHT        &trans           &trans               &kp LEFT_ARROW   &trans           &kp LEFT_BRACE    &kp DOUBLE_QUOTES  &kp RIGHT_BRACE      &trans            &trans
+&trans      &trans                &trans          &trans           &trans           &trans               &kp RIGHT_ARROW  &kp GRAVE        &kp TILDE         &trans             &trans               &trans            &trans
+&kp C_MUTE  &trans                &trans          &trans           &trans           &trans               &kp ENTER        &trans           &trans            &trans             &trans               &to 3
             >;
 
             sensor-bindings = <&scroll_encoder>;
